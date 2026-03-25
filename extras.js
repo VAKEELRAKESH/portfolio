@@ -1,0 +1,1 @@
+/* Obsolete logic removed. All contact information is now rendered as direct clickable links in index.html for maximum accessibility. */

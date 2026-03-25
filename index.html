@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vakeel Rakesh | Workflow Automation & QA Engineer</title>
+  <meta name="description"
+    content="Vakeel Rakesh — Workflow & Process Automation Associate at SystemaOps. QA Testing, Odoo ERP, Python, Playwright specialist based in Hyderabad, India." />
+  <meta name="keywords" content="Vakeel Rakesh, QA Engineer, Automation, Odoo ERP, Playwright, Python, Hyderabad" />
+  <!-- Fix 3: Full Open Graph + Twitter Card tags -->
+  <meta property="og:title" content="Vakeel Rakesh — Portfolio" />
+  <meta property="og:description" content="QA Testing, Workflow Automation, ERP Consulting" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vakeelrakesh.com" />
+  <meta property="og:image" content="https://vakeelrakesh.com/assets/og-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vakeel Rakesh — Portfolio" />
+  <meta name="twitter:description" content="QA Testing, Workflow Automation, ERP Consulting" />
+  <!-- Fix 2: Inline SVG favicon — no external file needed -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text y='72' x='50' text-anchor='middle' font-size='52' font-weight='900' font-family='system-ui,sans-serif' fill='white'>VR</text></svg>" />
+  <!-- Fix 1: Google Fonts (Plus Jakarta Sans + DM Serif Display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="canonical" href="https://vakeelrakesh.com" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Task 3.3: JSON-LD Schema (2026 SEO) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vakeel Rakesh",
+      "jobTitle": "Workflow Automation Engineer",
+      "url": "https://vakeelrakesh.com",
+      "sameAs": [
+        "https://linkedin.com/in/vakeel-rakesh",
+        "https://github.com/VAKEELRAKESH"
+      ],
+      "knowsAbout": ["Python", "Playwright", "Odoo ERP", "QA Automation", "Process Design"]
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip to main content (WCAG 2.1 AA) -->
+  <a href="#hero" class="skip-to-content">Skip to content</a>
+
+  <!-- ========================= PREMIUM UI EXTRAS ========================= -->
+  <div id="scroll-progress-bar"></div>
+  <div class="noise-overlay"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+
+
+
+  <!-- ========================= PAGE LOADER ========================= -->
+  <div id="page-loader">
+    <div class="loader-car-wrap">
+      <div class="loader-road"></div>
+      <div class="loader-car" style="z-index: 2;">🏎</div>
+      <div class="exhaust-dot" style="z-index: 1;"></div>
+      <div class="exhaust-dot" style="z-index: 1;"></div>
+      <div class="exhaust-dot" style="z-index: 1;"></div>
+    </div>
+
+    <div class="loader-brand">
+      <span>Vakeel Rakesh</span> &middot; Workflow &amp; Automation Engineer
+    </div>
+
+    <div class="loader-progress-wrap">
+      <div class="loader-progress-bar" id="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- ========================= GATE MODAL ========================= -->
+  <div id="gate-overlay" style="display:none;">
+    <div class="gate-card">
+      <div class="gate-top-bar"></div>
+      <div class="gate-body" id="gate-form-area">
+        <div class="gate-header">
+          <div class="gate-icon">⚙️</div>
+          <div>
+            <div class="gate-meta">Vakeel Rakesh · Portfolio</div>
+          </div>
+        </div>
+        <div class="gate-title">Portfolio access</div>
+        <div class="gate-sub">Enter your email for occasional updates, or simply click below to enter directly.</div>
+        <div class="gate-pills">
+          <div class="gate-pill">
+            <div class="dot amber"></div> High Speed
+          </div>
+          <div class="gate-pill">
+            <div class="dot teal"></div> One-Click
+          </div>
+          <div class="gate-pill">
+            <div class="dot green"></div> Recruiter Ready
+          </div>
+        </div>
+        <input class="gate-input" id="gate-email" type="email" aria-label="Email address (optional)" placeholder="Email address (Optional)"
+          autocomplete="email" />
+        <div class="gate-actions">
+          <button class="btn-gate-enter" id="btn-gate-enter">Allow & Enter Portfolio →</button>
+        </div>
+      </div>
+      <div class="gate-success" id="gate-success-area" style="display:none;">
+        <div class="check-icon">✓</div>
+        <div class="gate-success-title">You're in! Welcome. 👋 <strong>Your portfolio looks great.</strong></div>
+        <div class="gate-success-sub">Lilly's ready to guide you through VR's work.</div>
+        <div class="gate-success-bar">
+          <div class="gate-success-progress" id="gate-success-prog"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ========================= NAVBAR ========================= -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-badge">VR</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#credentials">Credentials</a></li>
+        <li><a href="#freelance">Freelance</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="nav-theme-btn" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-sun sun-icon"></i>
+          <i class="fa-solid fa-moon moon-icon" style="display:none;"></i>
+        </button>
+        <a href="assets/VAKEEL_RAKESH_Resume.pdf" download class="btn-nav-resume">
+          <i class="fa-solid fa-download fa-xs"></i> Resume
+        </a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#credentials" onclick="closeMobileMenu()">Credentials</a>
+    <a href="#freelance" onclick="closeMobileMenu()">Freelance</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    <a href="assets/VAKEEL_RAKESH_Resume.pdf" download class="mobile-resume-link">Download Resume</a>
+  </div>
+
+  <!-- ========================= HERO ========================= -->
+  <section id="hero">
+    <div class="hero-canvas-wrap">
+      <canvas id="hero-particles"></canvas>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-hi">Hi, I'm</div>
+        <h1 class="hero-name">Vakeel Rakesh</h1>
+        <div class="hero-name-underline"></div>
+        <div class="hero-role-line">
+          I work in <strong id="typewriter-text"></strong><span id="typewriter-cursor"
+            style="color:var(--c-primary);font-weight:400;">|</span>
+        </div>
+        <p class="hero-bio">
+          I design and automate business workflows, configure ERP systems, and bridge the gap between IT and operations.
+          Mechanical engineering roots meet modern automation practice.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag it">IT &amp; QA</span>
+          <span class="hero-tag erp">ERP / Odoo</span>
+          <span class="hero-tag mech">Mechanical</span>
+          <span class="hero-tag ai">AI / Python</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Let's Connect →</a>
+          <a href="#projects" class="btn-outline">See My Work</a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:rakeshvakeel000@gmail.com" class="hero-social-link" title="Email"><i
+              class="fa-solid fa-envelope fa-xs"></i></a>
+          <!-- Fix 4: rel=noopener noreferrer on all target=_blank links -->
+          <a href="https://linkedin.com/in/vakeel-rakesh" target="_blank" rel="noopener noreferrer"
+            class="hero-social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in fa-xs"></i></a>
+          <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer" class="hero-social-link"
+            title="GitHub"><i class="fa-brands fa-github fa-xs"></i></a>
+          <a href="https://kaggle.com/vakeelrakesh" target="_blank" rel="noopener noreferrer" class="hero-social-link"
+            title="Kaggle"><i class="fa-brands fa-kaggle fa-xs"></i></a>
+          <span class="hero-email-text">rakeshvakeel000@gmail.com</span>
+        </div>
+      </div>
+      <div class="hero-photo-wrap" data-animate="fade-left">
+        <div class="hero-photo-card">
+          <img src="assets/profile-professional.png" alt="Vakeel Rakesh" loading="eager"
+            onerror="this.style.background='linear-gradient(135deg,#5b5bd6,#7c3aed)';this.style.minHeight='340px';" />
+          <div class="hero-photo-overlay"></div>
+          <div class="hero-photo-info">
+            <div class="hero-photo-name">Vakeel Rakesh</div>
+            <div class="hero-photo-icons">
+              <a href="https://linkedin.com/in/vakeel-rakesh" target="_blank" rel="noopener noreferrer"
+                class="hero-photo-icon"><i class="fa-brands fa-linkedin-in fa-xs"></i></a>
+              <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+                class="hero-photo-icon"><i class="fa-brands fa-github fa-xs"></i></a>
+              <a href="https://kaggle.com/vakeelrakesh" target="_blank" rel="noopener noreferrer"
+                class="hero-photo-icon"><i class="fa-brands fa-kaggle fa-xs"></i></a>
+            </div>
+          </div>
+          <div class="hero-photo-badge">Open to Work</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fix 9: Stats Strip HTML (CSS already written in style.css) -->
+    <div class="stats-strip">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-count="3">0</span><span class="stat-suffix"></span>
+          <div class="stat-label">+ Years Experience</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span class="stat-suffix"></span>
+          <div class="stat-label">+ Certifications</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="3">0</span><span class="stat-suffix"></span>
+          <div class="stat-label">Companies</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="6">0</span><span class="stat-suffix"></span>
+          <div class="stat-label">+ Projects</div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- Fix 1: Hero section properly closed -->
+
+  <!-- ========================= ABOUT ========================= -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-bio" data-animate="fade-right">
+          <div class="section-label">01 — ABOUT</div>
+          <h2 class="about-title">The person behind the work</h2>
+          <p>I am a <strong>Workflow and Process Automation Associate</strong> at SystemaOps, where I translate
+            operational pain points into automated, reliable systems. My path here is unconventional — formal training
+            in mechanical engineering, hands-on time in HVAC operations at an IKON–Daikin facility, and industrial R&D
+            exposure at BHEL before pivoting decisively into IT.</p>
+          <p>That engineering foundation is an advantage. I understand workflows not just as data flows but as
+            physical
+            processes, which means I design better systems and ask better questions before writing a single line of
+            code.</p>
+          <p>I am currently building depth in Python, Playwright, and Odoo ERP while actively contributing to the
+            <span class="highlight">IndiaAI Innovation Challenge 2026</span> — applying AI to dispute resolution for
+            India's
+            MSME sector.
+          </p>
+          <blockquote class="about-quote">
+            "I don't just automate tasks. I redesign how work gets done."
+          </blockquote>
+        </div>
+        <div class="about-right" data-animate="fade-left">
+          <div class="about-skills-card">
+            <div class="about-skill-item">
+              <div class="about-skill-icon"><i class="fa-solid fa-code fa-sm"></i></div>
+              <div>
+                <div class="about-skill-name">IT &amp; Automation</div>
+                <div class="about-skill-tags">Python · Playwright · Odoo ERP · Workflow Design · QA Testing ·
+                  Rule-Based
+                  Automation</div>
+              </div>
+            </div>
+            <div class="about-skill-item">
+              <div class="about-skill-icon mech"><i class="fa-solid fa-gear fa-sm"></i></div>
+              <div>
+                <div class="about-skill-name">Mechanical &amp; Ops</div>
+                <div class="about-skill-tags">HVAC Systems · BHEL R&D · Process Documentation · Quality Validation ·
+                  SOP
+                  Execution</div>
+              </div>
+            </div>
+            <div class="about-skill-item">
+              <div class="about-skill-icon ai"><i class="fa-solid fa-brain fa-sm"></i></div>
+              <div>
+                <div class="about-skill-name">AI &amp; Innovation</div>
+                <div class="about-skill-tags">Machine Learning · IndiaAI Challenge · AI-powered Workflow Integration ·
+                  Multilingual Systems</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-info-card">
+            <div class="about-info-row"><i class="fa-solid fa-location-dot fa-xs"></i> Hyderabad, Telangana, India
+            </div>
+            <div class="about-info-row"><i class="fa-solid fa-graduation-cap fa-xs"></i> B.Tech — Mechanical
+              Engineering
+            </div>
+            <div class="about-info-row"><i class="fa-regular fa-clock fa-xs"></i> Currently: SystemaOps (Jan 2026 –
+              Present)</div>
+            <div class="about-info-row"><i class="fa-solid fa-circle-check fa-xs" style="color:var(--c-teal)"></i>
+              <span style="color:var(--c-teal);font-weight:600;">Open to IT, QA, ERP, and Mechanical roles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SKILLS ========================= -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">02 — SKILLS</div>
+      <h2 class="section-title">Tools, technologies &amp; strengths</h2>
+      <div class="tabs-row" role="tablist">
+        <button class="tab-btn active" data-tab="skills-tab-1" role="tab">IT &amp; Automation</button>
+        <button class="tab-btn" data-tab="skills-tab-2" role="tab">Mechanical &amp; Ops</button>
+        <button class="tab-btn" data-tab="skills-tab-3" role="tab">Stack &amp; Tools</button>
+        <button class="tab-btn" data-tab="skills-tab-4" role="tab">Documentation</button>
+      </div>
+
+      <div id="skills-tab-1" class="tab-panel active" role="tabpanel">
+        <div class="skills-pills">
+          <span class="skill-pill core">Python</span>
+          <span class="skill-pill core">Playwright</span>
+          <span class="skill-pill core">Workflow Automation</span>
+          <span class="skill-pill core">Odoo ERP</span>
+          <span class="skill-pill solid">Manual Testing</span>
+          <span class="skill-pill solid">Regression Testing</span>
+          <span class="skill-pill solid">Functional Testing</span>
+          <span class="skill-pill solid">UAT</span>
+          <span class="skill-pill grow">Rule-Based Logic</span>
+          <span class="skill-pill grow">BRD Preparation</span>
+          <span class="skill-pill grow">Gap Analysis</span>
+          <span class="skill-pill grow">Requirements Analysis</span>
+          <span class="skill-pill grow">Machine Learning</span>
+          <span class="skill-pill grow">API Verification</span>
+          <span class="skill-pill grow">SQL Basics</span>
+        </div>
+        <div class="skills-legend">
+          <span class="legend-dot core">Core</span>
+          <span class="legend-dot solid">Solid</span>
+          <span class="legend-dot grow">Growing</span>
+        </div>
+      </div>
+
+      <div id="skills-tab-2" class="tab-panel" role="tabpanel" hidden>
+        <div class="skills-pills">
+          <span class="skill-pill orange">HVAC Systems</span>
+          <span class="skill-pill orange">Daikin Operations</span>
+          <span class="skill-pill teal">Process Documentation</span>
+          <span class="skill-pill teal">Quality Validation</span>
+          <span class="skill-pill teal">SOP Execution</span>
+          <span class="skill-pill solid">BHEL R&D Support</span>
+          <span class="skill-pill grow">Cross-team Coordination</span>
+          <span class="skill-pill grow">Issue Resolution</span>
+          <span class="skill-pill grow">Technical Reporting</span>
+        </div>
+        <div class="skills-legend">
+          <span class="legend-dot core">Core</span>
+          <span class="legend-dot solid">Solid</span>
+          <span class="legend-dot grow">Growing</span>
+        </div>
+      </div>
+
+      <div id="skills-tab-3" class="tab-panel" role="tabpanel" hidden>
+        <div class="skills-pills">
+          <span class="skill-pill core">Python</span>
+          <span class="skill-pill core">Playwright</span>
+          <span class="skill-pill core">Odoo ERP</span>
+          <span class="skill-pill solid">React (basics)</span>
+          <span class="skill-pill solid">FastAPI (basics)</span>
+          <span class="skill-pill solid">Git / GitHub</span>
+          <span class="skill-pill grow">SQL</span>
+          <span class="skill-pill grow">REST APIs</span>
+          <span class="skill-pill grow">Kaggle / ML tools</span>
+          <span class="skill-pill grow">VS Code</span>
+          <span class="skill-pill grow">Postman</span>
+        </div>
+        <div class="skills-legend">
+          <span class="legend-dot core">Core</span>
+          <span class="legend-dot solid">Solid</span>
+          <span class="legend-dot grow">Growing</span>
+        </div>
+      </div>
+
+      <div id="skills-tab-4" class="tab-panel" role="tabpanel" hidden>
+        <div class="skills-pills">
+          <span class="skill-pill core">BRD Writing</span>
+          <span class="skill-pill core">Test Case Design</span>
+          <span class="skill-pill core">Defect Tracking</span>
+          <span class="skill-pill solid">As-Is / To-Be Mapping</span>
+          <span class="skill-pill solid">SOP Writing</span>
+          <span class="skill-pill solid">Gap Analysis Reports</span>
+          <span class="skill-pill grow">Technical Specifications</span>
+          <span class="skill-pill grow">Confluence / Notion</span>
+          <span class="skill-pill grow">Audit Trails</span>
+        </div>
+        <div class="skills-legend">
+          <span class="legend-dot core">Core</span>
+          <span class="legend-dot solid">Solid</span>
+          <span class="legend-dot grow">Growing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= EXPERIENCE ========================= -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label">03 — EXPERIENCE</div>
+      <h2 class="section-title">Where I've worked &amp; what I've done</h2>
+      <div class="exp-timeline">
+
+        <!-- Entry 1 -->
+        <div class="exp-item" data-animate="fade-up">
+          <div class="exp-item-line">
+            <div class="exp-badge so">SO</div>
+            <div class="exp-connector"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-role">Workflow &amp; Process Automation Associate</div>
+              <div class="exp-meta">
+                <span class="exp-period">Jan 2026 — Present</span>
+                <span class="exp-badge-tag current">Current</span>
+                <span class="exp-badge-tag it">IT / ERP</span>
+              </div>
+            </div>
+            <div class="exp-company">SystemaOps</div>
+            <ul class="exp-list">
+              <li>Odoo ERP workflow configuration and functional validation across business modules.</li>
+              <li>Business Requirement Gathering and Documentation (BRD) for process digitisation initiatives.</li>
+              <li>As-Is / To-Be process mapping to identify gaps between current operations and target system
+                behaviour.
+              </li>
+              <li>Functional Testing and UAT coordination to ensure system outputs match business expectations.</li>
+              <li>Gap analysis between business needs and system logic to prioritise change requests.</li>
+              <li>Automation support using Playwright and Python for UI-level and workflow-level test coverage.</li>
+              <li>Post-implementation support and issue resolution for deployed workflow modules.</li>
+            </ul>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">Odoo ERP</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Playwright</span>
+              <span class="tech-tag">BRD</span>
+              <span class="tech-tag">UAT</span>
+              <span class="tech-tag">Gap Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 2 -->
+        <div class="exp-item" data-animate="fade-up">
+          <div class="exp-item-line">
+            <div class="exp-badge di">DI</div>
+            <div class="exp-connector"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-role">Software QA &amp; Testing Associate</div>
+              <div class="exp-meta">
+                <span class="exp-period">Apr 2025 — Jan 2026</span>
+                <span class="exp-badge-tag qa">QA / Testing</span>
+              </div>
+            </div>
+            <div class="exp-company">Devsdom Infotech</div>
+            <ul class="exp-list">
+              <li>Manual testing and regression testing for web applications across multiple release cycles.</li>
+              <li>Test case and test scenario preparation aligned to functional requirements.</li>
+              <li>Defect logging, tracking, and re-testing using structured defect management workflows.</li>
+              <li>UAT support and workflow validation to confirm business acceptance criteria.</li>
+              <li>Basic API and UI behaviour verification across application modules.</li>
+              <li>Test documentation and version tracking to maintain audit-ready test records.</li>
+            </ul>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">Manual Testing</span>
+              <span class="tech-tag">Regression</span>
+              <span class="tech-tag">UAT</span>
+              <span class="tech-tag">Defect Tracking</span>
+              <span class="tech-tag">API Verification</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="exp-item" data-animate="fade-up">
+          <div class="exp-item-line">
+            <div class="exp-badge ai">AI</div>
+            <div class="exp-connector"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-role">Contributor — MSME-ODR AI Platform</div>
+              <div class="exp-meta">
+                <span class="exp-period">2026</span>
+                <span class="exp-badge-tag ai-tag">AI / Innovation</span>
+              </div>
+            </div>
+            <div class="exp-company">IndiaAI Innovation Challenge 2026</div>
+            <ul class="exp-list">
+              <li>Workflow logic design and validation for an AI-powered dispute resolution platform for MSME users.
+              </li>
+              <li>Functional usability testing to verify platform behaviour against defined acceptance criteria.</li>
+              <li>Exposure to React + FastAPI implementation patterns within a government-grade product context.</li>
+              <li>Multilingual AI assistant integration support for regional language accessibility.</li>
+              <li>Government-grade UI/UX validation and real-time translation validation.</li>
+            </ul>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">AI Platform</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Usability Testing</span>
+              <span class="tech-tag">Multilingual</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 4 -->
+        <div class="exp-item" data-animate="fade-up">
+          <div class="exp-item-line">
+            <div class="exp-badge ik">IK</div>
+            <div class="exp-connector"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-role">Process &amp; Operations Support — Project Trainee</div>
+              <div class="exp-meta">
+                <span class="exp-period">Feb 2023 — Sep 2024</span>
+                <span class="exp-badge-tag mech">Mechanical</span>
+              </div>
+            </div>
+            <div class="exp-company" style="color:#0891b2">IKON Air Conditioning Services (Daikin Partner)</div>
+            <ul class="exp-list">
+              <li>Supported structured operational workflows including task tracking, documentation, and issue
+                resolution.</li>
+              <li>Assisted in troubleshooting process deviations and coordinating corrective actions across teams.
+              </li>
+              <li>Maintained reports and standardized process documentation to improve execution consistency.</li>
+            </ul>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">HVAC</span>
+              <span class="tech-tag">Process Docs</span>
+              <span class="tech-tag">Issue Resolution</span>
+              <span class="tech-tag">Operations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entry 5 -->
+        <div class="exp-item" data-animate="fade-up">
+          <div class="exp-item-line">
+            <div class="exp-badge bh">BH</div>
+            <div class="exp-connector"></div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-card-top">
+              <div class="exp-role">Technical Operations Support — Industrial Trainee</div>
+              <div class="exp-meta">
+                <span class="exp-period">Nov 2019 — Apr 2020</span>
+                <span class="exp-badge-tag ind">Industrial</span>
+              </div>
+            </div>
+            <div class="exp-company" style="color:#065f46">BHEL R&D, Hyderabad</div>
+            <ul class="exp-list">
+              <li>Assisted engineers in process documentation, quality checks, and structured testing activities.</li>
+              <li>Supported assembly and validation workflows following standardized operating procedures.</li>
+              <li>Contributed to accurate technical reporting and cross-team coordination.</li>
+            </ul>
+            <div class="exp-tech-tags">
+              <span class="tech-tag">Quality Assurance</span>
+              <span class="tech-tag">SOP</span>
+              <span class="tech-tag">Technical Docs</span>
+              <span class="tech-tag">R&D Support</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PROJECTS ========================= -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">04 — PROJECTS</div>
+      <h2 class="section-title">Work that made a difference</h2>
+      <div class="tabs-row" role="tablist">
+        <button class="project-tab-btn active" data-filter="all" role="tab">All</button>
+        <button class="project-tab-btn" data-filter="it" role="tab">IT &amp; Automation</button>
+        <button class="project-tab-btn" data-filter="mech" role="tab">Mechanical &amp; Ops</button>
+        <button class="project-tab-btn" data-filter="ai" role="tab">AI &amp; Innovation</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Project 0: Lilly (Task 3.1) -->
+        <div class="project-card" data-cat="ai" data-animate="fade-up">
+          <div class="project-card-top">
+            <span class="project-type-tag ai">AI &amp; Orchestration</span>
+            <div class="project-featured-badge">New</div>
+          </div>
+          <div class="project-name">Lilly: AI Orchestration Layer</div>
+          <div class="project-context">Personal Project — AI Assistant Logic</div>
+          <div class="project-desc">Designed an intelligent orchestration layer using a Cloudflare Worker proxy to
+            interface with Anthropic's Claude-3.5-Sonnet. Built a specialized JSON-based knowledge base to give the AI
+            context-aware responses for specific industrial and IT domains.</div>
+          <div class="project-result">
+            <div class="project-result-label">Technical Stack</div>
+            <div class="project-result-text">Cloudflare Workers, Claude API, JSON RAG, Serverless Architecture.</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Cloudflare</span>
+            <span class="tech-tag">Claude 3.5</span>
+            <span class="tech-tag">RAG</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead # link removed for "View Architecture" (no doc yet) -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">View Source</a>
+          </div>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="project-card" data-cat="it" data-animate="fade-up">
+          <div class="project-card-top">
+            <span class="project-type-tag it">IT &amp; Automation</span>
+            <div class="project-link-icon"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></div>
+          </div>
+          <div class="project-name">Business Workflow Automation</div>
+          <div class="project-context">SystemaOps — Internal Operations</div>
+          <div class="project-desc">Recurring processes at SystemaOps required manual intervention and produced
+            inconsistent outputs across teams. Designed end-to-end automated workflows using rule-based logic and
+            Python
+            scripting. Built reusable components for scalable execution.</div>
+          <div class="project-result">
+            <div class="project-result-label">Result</div>
+            <div class="project-result-text">Reduced manual handoffs and improved process visibility through
+              structured
+              automation logs.</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Workflow Design</span>
+            <span class="tech-tag">Rule-Based Logic</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead "Case Study" link removed -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">Source</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-cat="it" data-animate="fade-up">
+          <div class="project-card-top">
+            <span class="project-type-tag qa">QA Automation</span>
+            <div class="project-link-icon"><i class="fa-solid fa-code fa-xs"></i></div>
+          </div>
+          <div class="project-name">Playwright UI Automation</div>
+          <div class="project-context">Devsdom Infotech — QA Pipeline</div>
+          <div class="project-desc">Manual UI testing on web applications was slow, repetitive, and inconsistent
+            across
+            test cycles. Applied Playwright to automate UI flows and interaction sequences. Integrated test scripts
+            into
+            structured QA workflows.</div>
+          <div class="project-result">
+            <div class="project-result-label">Result</div>
+            <div class="project-result-text">Reduced manual testing time and improved repeatability of UI validation
+              cycles.</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Playwright</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">UI Testing</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead "Case Study" link removed -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">Source</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-cat="it" data-animate="fade-up">
+          <div class="project-card-top">
+            <span class="project-type-tag erp">ERP / Techno-Functional</span>
+            <div class="project-link-icon"><i class="fa-solid fa-display fa-xs"></i></div>
+          </div>
+          <div class="project-name">Odoo ERP Workflow Configuration</div>
+          <div class="project-context">SystemaOps — ERP Implementation</div>
+          <div class="project-desc">Business process requirements needed translation into ERP workflows for
+            operational
+            traceability. Configured Odoo business process modules. Conducted gap analysis and mapped requirements to
+            system logic. Coordinated UAT and issue resolution.</div>
+          <div class="project-result">
+            <div class="project-result-label">Result</div>
+            <div class="project-result-text">Improved process traceability and reduced manual data management
+              overhead.
+            </div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Odoo ERP</span>
+            <span class="tech-tag">BRD</span>
+            <span class="tech-tag">UAT</span>
+            <span class="tech-tag">Gap Analysis</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead "Flowchart" link removed -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">Source</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-cat="ai" data-animate="fade-up">
+          <div class="project-card-top">
+            <div style="display:flex;gap:6px;align-items:center;">
+              <span class="project-type-tag ai">AI &amp; Innovation</span>
+              <span class="project-featured-badge">⭐ Featured</span>
+            </div>
+            <div class="project-link-icon"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></div>
+          </div>
+          <div class="project-name">IndiaAI MSME-ODR Platform</div>
+          <div class="project-context">IndiaAI Innovation Challenge 2026</div>
+          <div class="project-desc">National-level AI challenge to build a dispute resolution platform for India's
+            MSME
+            sector under the IndiaAI Mission 2026. Designed workflow logic and conducted functional usability testing.
+            Contributed to multilingual AI integration, government-grade AI validation, and real-time translation
+            verification using React + FastAPI.</div>
+          <div class="project-result">
+            <div class="project-result-label">Result</div>
+            <div class="project-result-text">Contributed to a national-level government-grade AI platform addressing
+              dispute resolution for millions of MSME businesses.</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">AI</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Multilingual</span>
+            <span class="tech-tag">UAT</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead "Architecture" link removed -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">Source</a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-cat="mech" data-animate="fade-up">
+          <div class="project-card-top">
+            <span class="project-type-tag mech">Mechanical &amp; Ops</span>
+            <div class="project-link-icon"><i class="fa-solid fa-wrench fa-xs"></i></div>
+          </div>
+          <div class="project-name">HVAC Operations Process Support</div>
+          <div class="project-context">IKON Air Conditioning Services</div>
+          <div class="project-desc">IKON Air Conditioning Services needed structured documentation and operational
+            coordination for HVAC service workflows. Supported task tracking, issue logging, and documentation of
+            service workflows. Troubleshot process deviations and coordinated corrective actions.</div>
+          <div class="project-result">
+            <div class="project-result-label">Result</div>
+            <div class="project-result-text">Standardized process documentation reduced recurring coordination gaps
+              across the operations team.</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">HVAC</span>
+            <span class="tech-tag">Process Docs</span>
+            <span class="tech-tag">Operations</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead "SOP Guide" link removed -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">Source</a>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-cat="mech" data-animate="fade-up">
+          <div class="project-card-top">
+            <span class="project-type-tag ind">Industrial Engineering</span>
+            <div class="project-link-icon"><i class="fa-solid fa-flask fa-xs"></i></div>
+          </div>
+          <div class="project-name">BHEL R&D Engineering Support</div>
+          <div class="project-context">BHEL R&D, Hyderabad</div>
+          <div class="project-desc">BHEL R&D required structured engineering documentation, quality validation, and
+            assembly support. Assisted engineers in quality checks, SOP-based assembly validation, and technical
+            reporting. Maintained documentation for cross-team coordination.</div>
+          <div class="project-result">
+            <div class="project-result-label">Result</div>
+            <div class="project-result-text">Contributed to consistent quality records and improved reporting accuracy
+              in an R&D environment.</div>
+          </div>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Quality Assurance</span>
+            <span class="tech-tag">SOP</span>
+            <span class="tech-tag">Technical Docs</span>
+          </div>
+          <div class="project-footer-links">
+            <!-- Fix 2: Dead "Validation Log" link removed -->
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer"
+              class="proj-footer-link">Source</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CREDENTIALS ========================= -->
+  <section id="credentials">
+    <div class="section-inner">
+      <div class="section-label">05 — CREDENTIALS</div>
+      <h2 class="section-title">Verified certifications &amp; learning</h2>
+      <div class="creds-grid">
+
+        <div class="cred-card" data-animate="fade-up">
+          <div class="cred-card-top">
+            <div class="cred-logo" style="background:#0e1726;">D</div>
+            <div class="cred-verify"><i class="fa-solid fa-circle-check fa-xs"></i> Verified</div>
+          </div>
+          <div class="cred-name">Technology Job Simulation</div>
+          <div class="cred-issuer">Deloitte Australia — Forage</div>
+          <div class="cred-date">August 2025</div>
+          <div class="cred-desc">Practical tasks in Coding and Development through Deloitte's industry simulation
+            program.</div>
+        </div>
+
+        <div class="cred-card" data-animate="fade-up">
+          <div class="cred-card-top">
+            <div class="cred-logo" style="background:#f59e0b;">S</div>
+            <div class="cred-verify"><i class="fa-solid fa-circle-check fa-xs"></i> Verified</div>
+          </div>
+          <div class="cred-name">Machine Learning</div>
+          <div class="cred-issuer">Simplilearn SkillUp</div>
+          <div class="cred-date">May 11, 2025</div>
+          <div class="cred-desc">Core ML concepts, algorithms, and practical model building fundamentals.</div>
+        </div>
+
+        <div class="cred-card" data-animate="fade-up">
+          <div class="cred-card-top">
+            <div class="cred-logo" style="background:#3730a3;">I</div>
+            <div class="cred-verify verify-pending"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+              Verify
+            </div>
+          </div>
+          <div class="cred-name">Basics of Python</div>
+          <div class="cred-issuer">Infosys Springboard</div>
+          <div class="cred-date">May 10, 2025</div>
+          <div class="cred-desc">Python syntax, data structures, functions, and scripting fundamentals.</div>
+        </div>
+
+        <div class="cred-card" data-animate="fade-up">
+          <div class="cred-card-top">
+            <div class="cred-logo" style="background:#0284c7;">C</div>
+            <div class="cred-verify verify-pending"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+              Verify
+            </div>
+          </div>
+          <div class="cred-name">Python: Loops, Functions &amp; Returns</div>
+          <div class="cred-issuer">Coursera Project Network</div>
+          <div class="cred-date">June 19, 2025</div>
+          <div class="cred-desc">Hands-on project covering Python loops, function design, and return values.</div>
+        </div>
+
+        <div class="cred-card" data-animate="fade-up">
+          <div class="cred-card-top">
+            <div class="cred-logo" style="background:#7c3aed;">+</div>
+            <div class="cred-verify ongoing"><i class="fa-solid fa-rotate fa-xs"></i> Ongoing</div>
+          </div>
+          <div class="cred-name">Python Technology Stack</div>
+          <div class="cred-issuer">Infosys Springboard · Simplilearn · Kaggle</div>
+          <div class="cred-date">2025</div>
+          <div class="cred-desc">Multiple Python learning paths across three platforms covering scripting, data, and
+            automation use cases.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FREELANCE ========================= -->
+  <section id="freelance">
+    <div class="section-inner">
+      <div class="section-label">06 — FREELANCE</div>
+      <h2 class="section-title">Open to freelance &amp; contract work</h2>
+      <div class="freelance-banner" data-animate="fade-up">
+        <div>
+          <div class="freelance-available">
+            <div class="freelance-available-dot"></div>
+            <span class="freelance-available-text">Available for Projects</span>
+          </div>
+          <div class="freelance-heading">Let's build something together.</div>
+          <p class="freelance-desc">
+            I'm open to freelance, contract, and short-term consulting engagements. Whether you need a QA engineer, an
+            automation specialist, or an ERP consultant — I bring structured thinking, engineering precision, and fast
+            turnaround. Reach out and let's talk about your project.
+          </p>
+          <a href="#contact" class="btn-freelance"><i class="fa-regular fa-envelope fa-sm"></i> Start a
+            Conversation</a>
+        </div>
+        <div class="freelance-gear">⚙️</div>
+      </div>
+      <div class="freelance-services">
+        <div class="service-card" data-animate="fade-up">
+          <span class="service-icon">✏️</span>
+          <div class="service-name">QA Testing</div>
+          <div class="service-desc">Manual, regression, UAT, and functional testing. Test case design, defect
+            tracking,
+            and acceptance validation for web and enterprise apps.</div>
+          <div class="service-tags">
+            <span class="service-tag">Manual Testing</span>
+            <span class="service-tag">Regression</span>
+            <span class="service-tag">UAT</span>
+          </div>
+        </div>
+        <div class="service-card" data-animate="fade-up">
+          <span class="service-icon">&lt;/&gt;</span>
+          <div class="service-name">Test Automation</div>
+          <div class="service-desc">Playwright + Python-based UI automation scripts. Workflow automation, rule-based
+            logic, and scripted regression pipelines.</div>
+          <div class="service-tags">
+            <span class="service-tag">Playwright</span>
+            <span class="service-tag">Python</span>
+            <span class="service-tag">CI Pipelines</span>
+          </div>
+        </div>
+        <div class="service-card" data-animate="fade-up">
+          <span class="service-icon">🖥️</span>
+          <div class="service-name">ERP Functional Consulting</div>
+          <div class="service-desc">Odoo ERP configuration, BRD documentation, As-Is / To-Be process mapping, gap
+            analysis, and UAT coordination for business digitalisation.</div>
+          <div class="service-tags">
+            <span class="service-tag">Odoo ERP</span>
+            <span class="service-tag">BRD</span>
+            <span class="service-tag">Gap Analysis</span>
+          </div>
+        </div>
+        <div class="service-card" data-animate="fade-up">
+          <span class="service-icon">⚙️</span>
+          <div class="service-name">Mechanical / Operations</div>
+          <div class="service-desc">Process documentation, HVAC operations support, SOP creation, quality checks, and
+            technical reporting for industrial and field operations.</div>
+          <div class="service-tags">
+            <span class="service-tag">HVAC</span>
+            <span class="service-tag">Process Docs</span>
+            <span class="service-tag">Operations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CONTACT ========================= -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label" style="margin-bottom:8px;">07 — CONTACT</div>
+      <h2 class="section-title" style="margin-bottom:0;">Let's work together</h2>
+      <div class="contact-grid" style="margin-top:32px;">
+        <div data-animate="fade-right">
+          <p class="contact-subtitle">
+            I'm open to QA, automation, ERP functional, and mechanical or operations-based roles. Whether you're
+            hiring
+            or just want to connect, reach out — I respond promptly.
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:rakeshvakeel000@gmail.com" class="contact-card">
+              <div class="contact-card-icon"><i class="fa-regular fa-envelope fa-sm"></i></div>
+              <div>
+                <div class="contact-card-label">Email</div>
+                <div class="contact-card-value">rakeshvakeel000@gmail.com</div>
+              </div>
+              <div class="contact-card-action"><i class="fa-solid fa-paper-plane fa-xs"></i></div>
+            </a>
+            <a href="tel:+917660043617" class="contact-card">
+              <div class="contact-card-icon" style="background:rgba(13,148,136,.1);color:var(--c-teal)"><i
+                  class="fa-solid fa-phone fa-sm"></i></div>
+              <div>
+                <div class="contact-card-label">Phone</div>
+                <div class="contact-card-value">+91 76600 43617</div>
+              </div>
+              <div class="contact-card-action"><i class="fa-solid fa-phone-flip fa-xs"></i></div>
+            </a>
+            <!-- Fix 4: rel=noopener noreferrer on external links -->
+            <a href="https://linkedin.com/in/vakeel-rakesh" target="_blank" rel="noopener noreferrer"
+              class="contact-card">
+              <div class="contact-card-icon" style="background:rgba(10,102,194,.1);color:#0a66c2"><i
+                  class="fa-brands fa-linkedin-in fa-sm"></i></div>
+              <div>
+                <div class="contact-card-label">LinkedIn</div>
+                <div class="contact-card-value">linkedin.com/in/vakeel-rakesh</div>
+              </div>
+              <div class="contact-card-action"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></div>
+            </a>
+            <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon" style="background:rgba(0,0,0,.07);color:#18181b"><i
+                  class="fa-brands fa-github fa-sm"></i></div>
+              <div>
+                <div class="contact-card-label">GitHub</div>
+                <div class="contact-card-value">github.com/VAKEELRAKESH</div>
+              </div>
+              <div class="contact-card-action"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></div>
+            </a>
+          </div>
+        </div>
+        <!-- Fix 9: Contact form (Formspree free tier) replaces right column -->
+        <div class="contact-right" data-animate="fade-left">
+          <form id="contact-form" action="https://formspree.io/f/xwkgvozp" method="POST" class="contact-form-card">
+            <div class="contact-form-title">Send me a message</div>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input"
+                placeholder="e.g. first_name last_name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea"
+                placeholder="Tell me about the role or project…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-form-submit" id="btn-form-submit">
+              <i class="fa-solid fa-paper-plane fa-xs"></i> Send Message
+            </button>
+            <div class="form-success" id="form-success" style="display:none;">
+              <i class="fa-solid fa-circle-check"></i> Message sent! I'll reply shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <div class="footer-logo-badge">VR</div>
+          <span class="footer-logo-name">Vakeel Rakesh</span>
+        </div>
+        <div class="footer-tagline">Workflow Automation · IT &amp; Mechanical Engineering</div>
+        <div class="footer-location">Hyderabad · Telangana · India</div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-socials">
+          <!-- Fix 4: rel=noopener noreferrer on footer external links -->
+          <a href="https://linkedin.com/in/vakeel-rakesh" target="_blank" rel="noopener noreferrer"
+            class="footer-social"><i class="fa-brands fa-linkedin-in fa-xs"></i></a>
+          <a href="https://github.com/VAKEELRAKESH" target="_blank" rel="noopener noreferrer" class="footer-social"><i
+              class="fa-brands fa-github fa-xs"></i></a>
+          <a href="https://kaggle.com/vakeelrakesh" target="_blank" rel="noopener noreferrer" class="footer-social"><i
+              class="fa-brands fa-kaggle fa-xs"></i></a>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#credentials">Credentials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Vakeel Rakesh · Hyderabad · India
+    </div>
+  </footer>
+
+  <!-- ========================= BACK TO TOP ========================= -->
+  <button id="back-to-top" title="Back to top">
+    <i class="fa-solid fa-chevron-up fa-xs"></i>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+  <script src="ai-assistant.js"></script>
+</body>
+
+</html>
