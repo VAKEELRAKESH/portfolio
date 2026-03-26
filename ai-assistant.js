@@ -20,7 +20,7 @@
     WORKER_URL: 'https://portfolio-ai.YOUR-SUBDOMAIN.workers.dev/chat',
 
     // Live mode — call Cloudflare Worker
-    USE_MOCK_MODE: false,
+    USE_MOCK_MODE: true,
 
     MAX_HISTORY: 10,       // messages kept in context
     TYPING_DELAY_MS: 900,  // simulated typing delay in mock mode
